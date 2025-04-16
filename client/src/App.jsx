@@ -9,7 +9,7 @@ import ApplicantsWithoutPosition from './ApplicantsWithoutPosition.jsx';
 import FinalLeadersList from './FinalLeadersList.jsx';
 import CommitteeMember from './CommitteeMember.jsx';
 import CommitteeApplications from './CommitteeApplications.jsx';
-import Navbar from './Navbar';
+import ApplicantReview from './ApplicantReview.jsx';
 import Footer from './Footer';
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
           <Route path="/final-leaders-list" element={<FinalLeadersList />} />
           <Route path="/committee-member" element={<CommitteeMember />} />
           <Route path="/committee-applications" element={<CommitteeApplications />} />
+          <Route path='/applicant-review' element={<ApplicantReview />} />
         </Routes>
       </BrowserRouter>
     </div>

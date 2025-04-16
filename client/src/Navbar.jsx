@@ -86,6 +86,11 @@ const Navbar = () => {
                       Committee Applications
                     </Link>
                   </li>
+                  <li>
+                    <Link className="dropdown-item" to="/applicant-review" style={dropdownItemStyle}>
+                      Applicant Review
+                    </Link>
+                  </li>
                 </ul>
               )}
             </li>

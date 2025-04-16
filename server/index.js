@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require("express");
 const sql = require("mssql");
 const cors = require("cors");
-
+const path = require('path');
 
 
 //const { passport, initializeSession } = require('./auth'); // Import the authentication setup
@@ -266,9 +266,10 @@ app.get('/api/applicants-without-position', async (req, res) => {
   }
 });
 
-app.use(express.static("./client/build"));
-app.get("*", (req,res) => {
-  res.sendFile(Path2D.resolve(__dirname, "client", "build", "Home.jsx"))
+app.use(express.static(path.join(__dirname, '..', 'client', 'build')));
+ 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'client', 'build', 'index.html'));
 });
 
 // Start the server
