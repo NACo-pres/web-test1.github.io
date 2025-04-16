@@ -22,5 +22,8 @@
     "nodemon": "^3.1.9",
     "passport": "^0.7.0",
     "passport-azure-ad": "^4.3.5"
-  }
+  },
+  "engines": {
+    "node": "22.x"  
+}
 }

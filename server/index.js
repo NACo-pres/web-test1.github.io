@@ -266,7 +266,10 @@ app.get('/api/applicants-without-position', async (req, res) => {
   }
 });
 
-
+app.use(express.static("./client/build"));
+app.get("*", (req,res) => {
+  res.sendFile(Path2D.resolve(__dirname, "client", "build", "Home.jsx"))
+});
 
 // Start the server
 const PORT = process.env.PORT || 5000;
