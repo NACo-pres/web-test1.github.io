@@ -254,8 +254,6 @@ app.get('/api/applicants-without-position', async (req, res) => {
         WHERE 
             pcm.naco_committeepositionid IS NOT NULL
 
-
-
       `);
 
       // Send back the result as JSON
@@ -266,12 +264,15 @@ app.get('/api/applicants-without-position', async (req, res) => {
   }
 });
 
-app.use(express.static(path.join(__dirname, 'wwwroot')));
+app.use(cors());
+app.use(express.static(path.join(__dirname, '../client/dist')));
 
-// Catch-all route to serve the index.html for React app
+// Fallback to index.html
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'wwwroot', 'index.html'));
+  res.sendFile(path.join(__dirname, '../client/dist/index.html'));
 });
+
+
 // Start the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
