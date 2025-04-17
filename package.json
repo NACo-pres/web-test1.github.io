@@ -1,9 +1,9 @@
 {
   "name": "naco-portal",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server/index.js",
     "postinstall": "cd client && npm install && npm run build"
   },
   "engines": {
