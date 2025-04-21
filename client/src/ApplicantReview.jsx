@@ -94,7 +94,7 @@ const ApplicantReview = () => {
       
       const filterMatch = Object.keys(filters).every(column => {
         if (!filters[column] || filters[column] === 'All') return true;
-        return applicant[column]?.toString().toLowerCase() === filters[column].toLowerCase();
+        return applicant[column]?.toString().toLowerCase() === filters[column].toLowerCase(); 
       });
       return searchMatch && filterMatch;
     });
