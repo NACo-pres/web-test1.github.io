@@ -1,2 +1,2 @@
 [config]
-project = server
+build_command = bash build.sh

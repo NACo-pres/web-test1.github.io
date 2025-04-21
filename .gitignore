@@ -31,3 +31,7 @@ dist-ssr
 
 # Ignore frontend build output (optional locally)
 client/dist/
+
+!build.sh
+!package.json
+!server/package.json
