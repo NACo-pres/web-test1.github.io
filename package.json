@@ -3,8 +3,7 @@
     "version": "1.0.0",
     "scripts": {
       "build": "bash build.sh",
-      "start": "node server/index.js",
-      "postinstall": "export NODE_OPTIONS=--max-old-space-size=4096 && npm --prefix ./client install && npm --prefix ./client run build"
+      "start": "node server/index.js","postinstall": "echo 'Skipping build on Azure'"
     },
     "engines": {
       "node": "22.x"

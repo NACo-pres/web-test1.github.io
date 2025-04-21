@@ -265,13 +265,12 @@ app.get('/api/applicants-without-position', async (req, res) => {
 });
 
 app.use(cors());
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, '../client/dist')));
 
-// Fallback to index.html for all routes
+// Fallback for React Router
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, '../client/dist/index.html'));
 });
-
 
 
 // Start the server
