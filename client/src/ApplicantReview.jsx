@@ -236,9 +236,8 @@ const ApplicantReview = () => {
         </select>
       </div>
 
-      {/* Scrollable Table with Sticky Headers */}
-            {/* Scrollable Table with Sticky Headers */}
-            <motion.div style={tableWrapperStyles} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+
+        <motion.div style={tableWrapperStyles} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
         <div style={tableContainerStyles}>
           <table {...getTableProps()} style={tableStyles}>
             <thead style={theadStyles}>
