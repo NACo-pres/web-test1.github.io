@@ -15,6 +15,7 @@ npm install
 cd ..
 
 echo "📦 Copying build to server..."
-cp -r client/build server/build
+cp -r client/dist/* server/public/
+
 
 echo "✅ Build completed."
