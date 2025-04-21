@@ -1,2 +1,4 @@
 [config]
 build_command = bash build.sh
+
+project = .
