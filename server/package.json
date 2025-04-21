@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "postinstall": "npm --prefix client install && npm --prefix client run build"
+    "postinstall": "npm --prefix ../client install && npm --prefix ../client run build"
   },
   "engines": {
     "node": "22.x"
