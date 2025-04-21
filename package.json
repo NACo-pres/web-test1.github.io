@@ -1,10 +1,11 @@
 {
-    "name": "naco-fullstack",
+    "name": "nacoportal-fullstack",
     "version": "1.0.0",
     "scripts": {
-      "build": "cd client && npm install && npm run build && cd ../server && npm install",
-      "start": "node server/index.js" 
+      "build": "bash build.sh",
+      "start": "node server/index.js"
     },
+  
    "engines": {
     "node": "22.x"
   }
