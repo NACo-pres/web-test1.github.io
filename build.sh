@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Exit if any command fails
-set -e
-
 echo "Installing client dependencies..."
 cd client
 npm install
@@ -15,7 +12,5 @@ npm install
 cd ..
 
 echo "Copying build to server..."
+mkdir -p server/public
 cp -r client/dist/* server/public/
-
-
-echo "Build completed."
