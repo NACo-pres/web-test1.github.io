@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "scripts": {
       "build": "bash build.sh",
-      "start": "node server/index.js"
+      "start": "node server/index.js",
+      "postinstall": "cd client && npm install && npm run build"
     },
   
    "engines": {
