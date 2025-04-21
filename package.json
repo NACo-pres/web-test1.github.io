@@ -4,7 +4,7 @@
     "scripts": {
       "build": "bash build.sh",
       "start": "node server/index.js",
-      "postinstall": "cd client && npm install && npm run build"
+      "postinstall": "npm --prefix ./client install && npm --prefix ./client run build"
     },
   
    "engines": {
